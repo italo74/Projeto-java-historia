@@ -83,6 +83,8 @@ public class Historia {
             System.out.println("2 - "+ capBescolha2 + "( Custa [15] de energia. )") ;
             System.out.println("3 - "+ capBescolha3 + "( Custa [5] de energia. )");
             
+            escolha = leitor.nextInt();
+
             if (escolha ==1 ) {
                 System.out.println(capBescolha1);
                 System.out.println("Sua esposa te convence de que não é uma boa ideia e você desiste disso.");
@@ -102,9 +104,7 @@ public class Historia {
         
         
         
-        
-           
-        
+               
         else 
         {
             System.out.println(capAescolha3);
@@ -118,6 +118,8 @@ public class Historia {
             System.out.println("1 - "+ capBescolha1 + "( Custa [10] de energia. )");
             System.out.println("2 - "+ capBescolha2 + "( Custa [10] de energia. )") ;
             System.out.println("3 - "+ capBescolha3 + "( Custa [5] de energia. )");
+
+            escolha = leitor.nextInt();
 
             if (escolha == 1||escolha ==2 ) {
                 System.out.println("Você consegue descobrir que se trata de um tesouro em uma floresta na Amazônia");
@@ -139,6 +141,37 @@ public class Historia {
     
                 if (escolha == 1) {
                 System.out.println("Você decide pegar o primeiro avião pra Amazônia e dizer a ela que vai a uma viagem a trabalho.");
+                System.out.println("Você chega a floresta e começa a ir atrás do tesouro.");
+                System.out.println("Você tem um mapa, e com as informações que escutou, sabe que esxistem 3 caminhos.");
+                System.out.println(" Qual você escolhe? ");
+
+                String capCescolha1 = "Seguir pelas montanhas.";
+                String capCescolha2 = "Atravessar a floresta.";
+                String capCescolha3 = "Seguir o curso do rio.";
+
+                System.out.println("1 - "+ capCescolha1 + "( Custa [20] de energia. )");
+                System.out.println("2 - "+ capCescolha2 + "( Custa [15] de energia. )") ;
+                System.out.println("3 - "+ capCescolha3 + "( Custa [10] de energia. )");
+
+                if (escolha == 1) {
+                    System.out.println(capCescolha1);
+                    System.out.println("Você gasta muita energia e tempo mas consegue chegar primeiro ao tesouro, parabenss!");
+                    
+                }
+
+                else if (escolha == 2) {
+                    System.out.println(capCescolha2);
+                    System.out.println("No meio do caminho vc encontra bandidos e luta contra eles para pegar o tesouro primeiro.");
+                    System.out.println("Você vence e consegue o tesouro");                   
+                }
+
+                else {
+                    System.out.println(capCescolha3);
+                    System.out.println("Você enfrenta desafios na naturesa, porem consegue rapidamente chegar ao tesouro !!");
+                }
+    
+
+
                 System.out.println("Com seu conhecimento encontrou o tesouro e pegou ele primeiro que os bandidos.");    
                 }
     
@@ -165,12 +198,8 @@ public class Historia {
             
         }
 
-
-
-
         leitor.close();    
-        }
-            
+        }            
         
     }
 
